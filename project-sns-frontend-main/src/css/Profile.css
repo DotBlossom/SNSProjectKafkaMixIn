@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+  
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--gray1-color);
+    padding: 40px 0;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color);
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    max-width: 850px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-detail {
+    width: 60%;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.posts-and-follows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posts-and-follows div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separate-line {
+    margin: 20px;
+    color: var(--gray1-color);
+}
+
+.posts {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Same spacing for both rows and columns */
+}
+
+.posts img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}

@@ -1,0 +1,22 @@
+.follow-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.following {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.not-following {
+    background-color: #4caf50;
+    color: white;
+}
+
+.follow-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

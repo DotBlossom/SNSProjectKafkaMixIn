@@ -1,0 +1,90 @@
+.notification-parent {
+    position: relative; 
+    
+    
+}
+
+.notification-modal {
+    min-width: 250px;
+    max-width: 320px;
+    position: absolute;
+    top: 60px; /* Adjust this value according to your layout */
+    right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+.notification-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    
+
+}
+  .notification-modal ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  .notification-modal li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+
+  }
+  .notification-modal li span {
+
+
+    margin-left: 5px;
+  }
+  .notification-modal li img {
+    
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .notification-modal li:hover {
+    background-color: #f0f0f0;
+  }
+
+    /* 필요에 따라 다른 스타일 추가 (예: padding, line-height 등) */
+  
+
+  .close-modal {
+    max-width: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+   
+
+}
+  .header-text {
+
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+  }
+  .modal-empty {
+    margin-bottom: 10px;
+    margin-left: 5%;
+  }
+  .notification-line {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }

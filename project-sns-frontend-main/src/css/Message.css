@@ -1,0 +1,121 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.user-input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  outline: var(--gray4-color);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 745px;
+  padding-left: 40px;
+}
+
+.message-container {
+  background-color: var(--white-color);
+  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+  border-radius: 15px;
+  max-width: 840px;
+  min-height: 500px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.profile-row,
+.username-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.profile-row {
+  margin-top: 10px;
+}
+
+.user-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 14px;
+  color: var(--gray4-color);
+  margin: 0;
+}
+
+.message-hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid;
+  border-color: var(--gray4-color);
+  margin: 20px 0;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 800px;
+  height: 50px;
+  position: relative;
+}
+
+.message-content > div:first-child {
+  margin-bottom: auto;
+}
+
+.send-container {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  position: relative;
+}
+
+.user-message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: var(--gray3-color);
+  background-color: var(--gray2-color);
+  outline: none;
+  width: 100%;
+}
+
+.send-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.send-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.active-border {
+  border: 2px solid var(--gray4-color); /* 원하는 색으로 설정 가능 */
+  border-radius: 50%;
+}

@@ -1,0 +1,120 @@
+.Navigate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* .Navigate input {
+  border: none;
+  outline: var(--gray4-color);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+  width: 50%;
+  height: 60px;
+  border-radius: 20px;
+  max-width: 745px;
+  padding-left: 40px;
+} */
+
+.error {
+  color: var(--gray4-color);
+  margin-top: 20px;
+}
+
+.posts-container {
+  background-color: var(--white-color);
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 15px;
+  max-width: 840px;
+  min-height: 500px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.post {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 정사각형 비율 */
+}
+
+.post img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.loader-img {
+  width: 70px;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+
+.message-overlay p {
+  color: var(--gray4-color);
+  padding-bottom: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.search-btn {
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 25%;
+}
+
+.nav-input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  outline: var(--gray4-color);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 745px;
+  padding-left: 40px;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* .delta-icon {
+  position: absolute;
+  left: 25%;
+  width: 30px;
+  height: 30px;
+} */

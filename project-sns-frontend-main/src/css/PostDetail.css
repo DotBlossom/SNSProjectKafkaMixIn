@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.post-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--gray1-color);
+    padding: 40px 0;
+}
+
+.post-detail-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--white-color);
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+
+    /* 게시물 크기 조정 */
+    max-width: 600px;
+}
+
+.post-detail-user-basic-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.post-detail-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-detail-option {
+    width: 42px;
+    height: 42px;
+}
+
+.post-detail-user-info img {
+    width: 54px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.post-detail-functions {
+    display: flex;
+    margin: 10px;
+    gap: 30px;
+}
+
+.post-detail-functions img {
+    cursor: pointer;
+}
+
+.post-detail-content {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.post-detail-comments-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.comment-option {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.post-detail-comments {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-right: 10px;
+}
+
+/* 댓글 단 사람들 */
+.post-detail-comments img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.post-detail-comments div {
+    margin-left: 16px;
+    flex-grow: 1;
+}
+
+.post-detail-commenter-user-name {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.post-detail-comments-content {
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.post-detail-comments-new {
+    width: 100%;
+    border: none;
+    resize: none; /* Disable manual resizing by the user */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+    min-height: 40px; /* Minimum height of the textarea */
+    line-height: 1.5; /* Line height to make text readable */
+    font-size: 1rem; /* Font size for consistency */
+}
+
+
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-actions img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

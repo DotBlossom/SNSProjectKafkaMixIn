@@ -1,0 +1,29 @@
+.image-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 25px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.image-container img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.search-input {
+  padding-right: 30px;
+  height: 32px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 16px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}

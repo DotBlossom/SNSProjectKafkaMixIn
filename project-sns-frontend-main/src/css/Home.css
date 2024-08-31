@@ -1,0 +1,38 @@
+.home-container {
+    position: relative;
+    padding-right: 0;
+    transition: padding-right 0.4s ease-in-out; /* 모달 슬라이드와 맞춰서 패딩 적용 */
+    max-width: 800px; /* 중앙에 고정된 너비 설정 */
+    margin: 0 auto; /* 카드 컨텐츠가 중앙에 위치하도록 설정 */
+}
+
+.home-container.modal-open {
+    padding-right: 30%; /* 모달 너비만큼 오른쪽 패딩 추가 */
+}
+
+.post-list {
+    display: block;
+    width: 100%; /* 컨테이너의 너비를 가득 채우도록 설정 */
+}
+
+.new-post-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.new-post-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.error {
+    color: red;
+}

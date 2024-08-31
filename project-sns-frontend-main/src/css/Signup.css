@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--gray1-color);
+}
+
+.catchphrase {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-left: 10%;
+}
+
+.catchphrase p {
+  color: var(--gray4-color);
+  font-size: 15px;
+  font-weight: var(--typo-body-2-weight);
+  margin-left: 2%;
+}
+
+.signup-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signup-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.signup-logo a {
+  font-size: var(--typo-heading-2);
+  font-weight: var(--typo-heading-2-weight);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  border-radius: 15px;
+  width: 100%;
+  height: 60%;
+  max-width: 600px;
+  max-height: 550px;
+}
+
+.signup-form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  height: 5%;
+  border: 1px solid var(--gray2-color);
+  background-color: var(--gray1-color);
+  border-radius: 10px;
+}
+
+.signup-form input::placeholder {
+  color: var(--gray3-color);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 2%;
+  margin-top: 15px;
+}
+
+.cancel-button,
+.signup-button {
+  padding: 10px;
+  width: 47%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--typo-heading-2-weight);
+  font-weight: var(--typo-heading-2-weight);
+}
+
+.cancel-button {
+  background-color: var(--gray3-color);
+  color: var(--gray4-color);
+}
+
+.signup-button {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+/* 모바일 환경 대응 */
+@media (max-width: 768px) {
+  .catchphrase {
+    margin-left: 5%;
+  }
+
+  .catchphrase p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .signup-logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .signup-logo a {
+    font-size: var(--typo-heading-4);
+  }
+
+  .signup-form {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    max-width: none;
+    max-height: none;
+  }
+
+  .signup-form input {
+    width: 90%;
+    height: auto;
+  }
+
+  .button-group {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .signup-button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}

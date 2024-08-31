@@ -1,0 +1,18 @@
+.HeaderLogoContainer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: 4px;
+  padding-left: 30px;
+}
+
+.main-logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.main-logo-text {
+  font-size: var(--typo-heading-2);
+  font-weight: var(--typo-heading-2-weight);
+}
