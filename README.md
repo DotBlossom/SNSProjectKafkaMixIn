@@ -1,9 +1,22 @@
-## 실행법 
-1. docker-compose를 vscode 아무데서나 열고, dokcer-compose up 하시면 이미지 깔림 
+# 실행법 
+1. docker-compose를 만들어서 vscode 아무데서나 열고, dokcer-compose up 하시면 이미지 깔림 
 2. docker-desktop -> kafka run -> sns backend -> kafka backend -> react zzz 
 
-## 실시간 인기 포스트 집계 (좋아요 개수 산정)
-### 프론트에서 정한 단위시간별로 부르거나 프론트의 로직에 맞게, 이 url 호출하면 인기 포스트 id 주고, 백엔드 캐시 데이터는 날라갑니다.
+# 주의 : 백엔드도 좀 바꿔놓아서, 그 프론트랑 카프카 서버만 뜯어가심 안됨니다.
+예전에 Service에 AOP 걸어놔서 entity 뜯어와서, controller에서 AOP로 데이터 가져오는것 보다 성능 구림.
+그리고 postDislike 같은건 void 라서, service에서만 필요한 값 return 하게하고(aop에서 가져와서 쓰려고), controller에서 그 값 안받음 
+-> 메인 코드 안바꾸기 위한 전략
+
+# 카프카 알림 서비스 특징
+1. 알림창 계속 열고있어도, 새 알림 오면 바로 추가됨
+2. 로그아웃하고, 다시 재로그인하면, 안읽은 알람 다시보내주기 + 로그아웃 동안 발생한 이벤트 순서 맞춰 보내줌
+3. 프론트 작업 좀 햇슴다. 그 모달 밖에 누르면 닫히게 만듬. 
+
+
+# 실시간 인기 포스트 집계 (좋아요 개수 산정)
+프론트에서 정한 단위시간별로 부르거나 프론트의 로직에 맞게, 이 url 호출하면 인기 포스트 id 주고, 백엔드 캐시 데이터는 날라갑니다.
+
+
 http://localhost:9292/kafkaListener/preference/posts
    
     
