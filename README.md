@@ -1,3 +1,20 @@
+## 실행법 
+1. docker-compose를 vscode 아무데서나 열고, dokcer-compose up 하시면 이미지 깔림 
+2. docker-desktop -> kafka run -> sns backend -> kafka backend -> react zzz 
+
+## 실시간 인기 포스트 집계 (좋아요 개수 산정)
+### 프론트에서 정한 단위시간별로 부르거나 프론트의 로직에 맞게, 이 url 호출하면 인기 포스트 id 주고, 백엔드 캐시 데이터는 날라갑니다.
+http://localhost:9292/kafkaListener/preference/posts
+   
+    
+    {
+        "eventType": "prefer",
+        "postIdToPrefer": [
+            1
+        ]
+    }
+
+
 ### kafka image docker-compose
     version: '3'
     
