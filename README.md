@@ -1,3 +1,5 @@
+## sk 루키즈 개발자 1기 미니프로젝트 2조
+
 # 실행법 
 1. docker-compose를 만들어서 vscode 아무데서나 열고, dokcer-compose up 하시면 이미지 깔림 
 2. docker-desktop -> kafka run -> sns backend -> kafka backend -> react zzz 
