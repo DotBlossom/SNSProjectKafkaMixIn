@@ -85,15 +85,15 @@ useEffect(() => {
         <hr className="notification-line"/>
         {notifications.length > 0 ? (
           <ul>
-            {notifications.reverse().map((notify, i) =>
+            {notifications.map((notify) =>
               notify.eventType === "postLike" ? (
-                <li key={i}>
+                <li key={notify.id}>
                   <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="userprofile" />
                   {notify.senderName} 이 회원님의 POST를 좋아해요. 
                   <span style={{fontSize : 12 }}>{notify.eventCreatedTime}</span>
                 </li>
               ) : (
-                <li key={i}>
+                <li key={notify.id}>
                   <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="userprofile" />
                   {notify.senderName} 이 회원님을 팔로우하기 시작했어요.
                   <span style={{fontSize : 12}}>{notify.eventCreatedTime}</span>
