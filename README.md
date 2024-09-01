@@ -7,6 +7,12 @@
 그리고 postDislike 같은건 void 라서, service에서만 필요한 값 return 하게하고(aop에서 가져와서 쓰려고), controller에서 그 값 안받음 
 -> 메인 코드 안바꾸기 위한 전략
 
+# 기능 관련 설명 이미지
+![1-0](https://github.com/user-attachments/assets/b2294772-449a-4ae5-a59e-42030a55ec0e)
+![1-1](https://github.com/user-attachments/assets/1aa300d6-0f93-48e7-871d-ca4fc309bffa)
+![1-2](https://github.com/user-attachments/assets/45f424b2-19ab-477e-8f10-4d51683e5357)
+
+
 # 카프카 알림 서비스 특징
 1. 알림창 계속 열고있어도, 새 알림 오면 바로 추가됨
 2. 로그아웃하고, 다시 재로그인하면, 안읽은 알람 다시보내주기 + 로그아웃 동안 발생한 이벤트 순서 맞춰 보내줌
