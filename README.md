@@ -36,6 +36,8 @@
 ### 관련 이미지
 ![t1](https://github.com/user-attachments/assets/7d1faab7-1ff5-4cf1-84bf-62ebe164b207)
 ![t2](https://github.com/user-attachments/assets/cba91277-f91f-47d5-8c01-98132d968df8)
+![스크린샷 2024-09-02 205418](https://github.com/user-attachments/assets/cabdf6c5-ab30-43eb-b129-19800d516327)
+
 
 
 ## 실시간 인기 포스트 집계 (좋아요 개수 산정)
