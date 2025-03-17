@@ -13,11 +13,8 @@
 ```
 
 
-## 실행법 
-1. docker-compose를 만들어서 vscode 아무데서나 열고, dokcer-compose up 하시면 이미지 깔림 
-2. docker-desktop -> kafka run -> sns backend -> kafka backend -> react zzz 
 
-## 주의 : 백엔드도 좀 바꿔놓아서, 그 프론트랑 카프카 서버만 뜯어가심 안됨니다.
+## 주의 : 팀원분들아 백엔드도 좀 바꿔놓아서, 그 프론트랑 카프카 서버만 뜯어가심 안됨니다.
 예전에 Service에 AOP 걸어놔서 entity 뜯어와서, controller에서 AOP로 데이터 가져오는것 보다 성능 구림.
 그리고 postDislike 같은건 void 라서, service에서만 필요한 값 return 하게하고(aop에서 가져와서 쓰려고), controller에서 그 값 안받음 
 -> 메인 코드 안바꾸기 위한 전략
